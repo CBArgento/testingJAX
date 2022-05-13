@@ -1,0 +1,41 @@
+body {
+    background: black;
+  }
+  .subheader {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    background: #e0dad4;
+    color: #867261;
+    overflow: hidden;
+    position: relative;
+    div {
+      display: block;
+      width: 200%;
+      position: absolute;
+      overflow: hidden;
+      animation: slideInAndOut 40s linear infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+    span {
+      float: left;
+      width: 50%;
+    }
+    a {
+      color: #f09000;
+      &:hover {
+        color: #867261;
+      }
+    }
+  }
+  @keyframes slideInAndOut {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+
+  .container {
+      background-color: yellow;
+  }
